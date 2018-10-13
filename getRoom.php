@@ -88,7 +88,7 @@ $result = $conn->query($sql);
             // output data of each row
             while($row = $result->fetch_assoc()) {
                 
-                echo "<tr><td>" . $row["no"]."</td><td>" . $row["type"]."</td></tr>";
+                echo "<tr><td>" . $row["No"]."</td><td>" . $row["type"]."</td></tr>";
             }
         } else {
             echo "0 results";

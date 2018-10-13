@@ -1,0 +1,27 @@
+CREATE TABLE `room` (
+  `No` int(11) NOT NULL,
+  `type` varchar(30) NOT NULL,
+  PRIMARY KEY (`No`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1	
+
+
+CREATE TABLE `person` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(30) NOT NULL,
+  `lastName` varchar(30) NOT NULL,
+  `address` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1	
+	
+
+
+CREATE TABLE `keys` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(30) NOT NULL,
+  `material` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1	
+
+
+
+Go to C:\xampp\phpMyAdmin\config.inc and set the user and password at the lines and $cfg['Servers'][$i]['user'] and $cfg['Servers'][$i]['password']. Use the same credentials in the code.
